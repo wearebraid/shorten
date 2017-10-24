@@ -7,7 +7,7 @@ environments:
     default_database: database
     database:
         adapter: mysql
-        host: mysql
+        host: localhost
         name: redirects
         user: your-username
         pass: 'your-password'

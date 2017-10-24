@@ -15,7 +15,7 @@ Need an easy to use custom URL shortener like bit.ly, t.co, goo.gl? Shorten is a
 Shorten is a small micro application. It is easily installed with composer’s `create-project` command.
 
 ```sh
-composer create-project braid/shortener your-shortener-name
+composer create-project braid/shorten your-shortener-name
 ```
 
 ### Configuration
@@ -33,14 +33,19 @@ Edit your newly created `config.php` as appropriate.
 
 Option        | Description
 --------------|--------------------------------------
-`base_url`    | You'll want to set your application's `base_url` to the domain name you are using as a shortener (http://bit.ly for example).
-`api_secret`  | Choose a randomly generated key (>32 bytes recommended). This will be your application's `Bearer` token for api requests.
-`api_secret`  | Choose a randomly generated key (>32 bytes recommended). This will be your application's `Bearer` token for api requests.
-`database`    | Shorten uses Laravel's excellent [Eloquent ORM](https://laravel.com/docs/5.5/eloquent). Configure the database credentials here. MySQL/MariaDB is recommended for medium/high traffic, but a simple SQLite is also supported.
+`base_url`    | You'll want to set your application’s `base_url` to the domain name you are using as a shortener (http://bit.ly for example).
+`api_secret`  | Choose a randomly generated key (>32 bytes recommended). This will be your application’s `Bearer` token for api requests.
+`database`    | Shorten uses Laravel’s excellent [Eloquent ORM](https://laravel.com/docs/5.5/eloquent). Configure the database credentials here. MySQL/MariaDB is recommended for medium/high traffic, but a simple SQLite is also supported.
+
+Pro Tip: here’s a quick way to generate an api key:
+
+```sh
+php -r 'echo bin2hex(openssl_random_pseudo_bytes(32)) . "\n";'
+```
 
 #### phinx.yml
 
-Shorten uses Rob Morgan's [Phinx](https://phinx.org/) for database migrations. Phinx has its own configuration, but the values should be the same as your `config.php` `database` settings.
+Shorten uses Rob Morgan’s [Phinx](https://phinx.org/) for database migrations. Phinx has its own configuration, but the values should be the same as your `config.php` `database` settings.
 
 ### Database
 
@@ -63,6 +68,12 @@ Method   | Endpoint      | Description
 `GET`    | `/resources`  | List all shortened URLs currently stored.
 `POST`   | `/resources`  | Creates a new URL. Must include a JSON body with a `url` attribute.
 `DELETE` | `/resources`  | Removes a shortened URL. Must include a JSON body with an `id` attribute.
+
+All api requests MUST include an `Authorization` header in the format:
+
+```
+Authorization: Bearer api_secret_here
+```
 
 The return format for redirect resources is JSON. Example:
 
