@@ -1,6 +1,5 @@
 .DS_Store
 vendor
-config.php
 phinx.yml
+/config.php
 /build/logs
-clover.xml
