@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1508811813">
+  <project timestamp="1508811813">
+    <package name="App\Middleware">
+      <file name="/var/www/shorten/app/Middleware/Api.php">
+        <class name="Api" namespace="App\Middleware">
+          <metrics complexity="13" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="25" elements="33" coveredelements="33"/>
+        </class>
+        <line num="24" type="method" name="getRequest" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="26" type="stmt" count="2"/>
+        <line num="34" type="method" name="setRequest" visibility="public" complexity="1" crap="1" count="11"/>
+        <line num="36" type="stmt" count="11"/>
+        <line num="37" type="stmt" count="11"/>
+        <line num="38" type="stmt" count="11"/>
+        <line num="45" type="method" name="isApi" visibility="public" complexity="1" crap="1" count="3"/>
+        <line num="47" type="stmt" count="3"/>
+        <line num="48" type="stmt" count="3"/>
+        <line num="56" type="method" name="isAuthorized" visibility="public" complexity="1" crap="1" count="7"/>
+        <line num="58" type="stmt" count="7"/>
+        <line num="59" type="stmt" count="7"/>
+        <line num="67" type="method" name="show" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="69" type="stmt" count="1"/>
+        <line num="77" type="method" name="create" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="79" type="stmt" count="2"/>
+        <line num="80" type="stmt" count="2"/>
+        <line num="81" type="stmt" count="1"/>
+        <line num="83" type="stmt" count="1"/>
+        <line num="84" type="stmt" count="1"/>
+        <line num="85" type="stmt" count="1"/>
+        <line num="93" type="method" name="response" visibility="public" complexity="4" crap="4" count="5"/>
+        <line num="95" type="stmt" count="5"/>
+        <line num="96" type="stmt" count="4"/>
+        <line num="97" type="stmt" count="4"/>
+        <line num="98" type="stmt" count="1"/>
+        <line num="99" type="stmt" count="3"/>
+        <line num="100" type="stmt" count="2"/>
+        <line num="102" type="stmt" count="1"/>
+        <line num="105" type="stmt" count="1"/>
+        <line num="115" type="method" name="process" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="117" type="stmt" count="1"/>
+        <line num="118" type="stmt" count="1"/>
+        <metrics loc="120" ncloc="73" classes="1" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="25" elements="33" coveredelements="33"/>
+      </file>
+      <file name="/var/www/shorten/app/Middleware/BodyParser.php">
+        <class name="BodyParser" namespace="App\Middleware">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+        </class>
+        <line num="19" type="method" name="process" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="21" type="stmt" count="1"/>
+        <line num="22" type="stmt" count="1"/>
+        <metrics loc="25" ncloc="18" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </file>
+      <file name="/var/www/shorten/app/Middleware/Database.php">
+        <class name="Database" namespace="App\Middleware">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="6" coveredelements="6"/>
+        </class>
+        <line num="19" type="method" name="process" visibility="public" complexity="1" crap="1" count="13"/>
+        <line num="21" type="stmt" count="13"/>
+        <line num="22" type="stmt" count="13"/>
+        <line num="23" type="stmt" count="13"/>
+        <line num="24" type="stmt" count="13"/>
+        <line num="25" type="stmt" count="13"/>
+        <metrics loc="27" ncloc="20" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="6" coveredelements="6"/>
+      </file>
+      <file name="/var/www/shorten/app/Middleware/Redirect.php">
+        <class name="Redirect" namespace="App\Middleware">
+          <metrics complexity="2" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="7" coveredelements="7"/>
+        </class>
+        <line num="21" type="method" name="process" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="23" type="stmt" count="2"/>
+        <line num="24" type="stmt" count="2"/>
+        <line num="25" type="stmt" count="2"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="27" type="stmt" count="1"/>
+        <line num="29" type="stmt" count="1"/>
+        <metrics loc="31" ncloc="24" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="7" coveredelements="7"/>
+      </file>
+    </package>
+    <package name="App\Models">
+      <file name="/var/www/shorten/app/Models/Redirect.php">
+        <class name="Redirect" namespace="App\Models">
+          <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
+        </class>
+        <line num="43" type="method" name="getUrlAttribute" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="45" type="stmt" count="1"/>
+        <line num="53" type="method" name="createUnique" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="56" type="stmt" count="1"/>
+        <line num="57" type="stmt" count="1"/>
+        <line num="58" type="stmt" count="1"/>
+        <line num="59" type="stmt" count="1"/>
+        <line num="60" type="stmt" count="1"/>
+        <metrics loc="63" ncloc="38" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
+      </file>
+    </package>
+    <file name="/var/www/shorten/app/helpers.php">
+      <line num="11" type="stmt" count="2"/>
+      <line num="12" type="stmt" count="2"/>
+      <line num="13" type="stmt" count="2"/>
+      <line num="14" type="stmt" count="2"/>
+      <line num="15" type="stmt" count="2"/>
+      <line num="16" type="stmt" count="2"/>
+      <line num="26" type="stmt" count="14"/>
+      <line num="27" type="stmt" count="14"/>
+      <line num="28" type="stmt" count="1"/>
+      <line num="30" type="stmt" count="14"/>
+      <metrics loc="31" ncloc="19" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="10" coveredelements="10"/>
+    </file>
+    <metrics files="6" loc="297" ncloc="192" classes="5" methods="13" coveredmethods="13" conditionals="0" coveredconditionals="0" statements="54" coveredstatements="54" elements="67" coveredelements="67"/>
+  </project>
+</coverage>

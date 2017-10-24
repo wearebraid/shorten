@@ -1,0 +1,4 @@
+.DS_Store
+vendor
+config.php
+phinx.yml

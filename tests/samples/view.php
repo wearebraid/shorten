@@ -1,0 +1,1 @@
+Test value: <?php echo $hash ?>
