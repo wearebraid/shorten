@@ -1,5 +1,5 @@
 .DS_Store
 vendor
-phinx.yml
+/phinx.yml
 /config.php
 /build/logs
