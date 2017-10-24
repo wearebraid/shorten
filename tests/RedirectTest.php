@@ -46,7 +46,7 @@ class RedirectTest extends TestCase
         );
 
         // Setup the database connection
-        $config = config('/tests/samples/config.php');
+        $config = config('tests/samples/config.php');
         touch($config['database']['database']);
         $delegate = new Delegate();
         $database = new Database();
