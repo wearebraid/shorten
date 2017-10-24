@@ -33,6 +33,7 @@ class RedirectTest extends TestCase
      */
     public function setUp(): void
     {
+        require_once __DIR__ . "/../app/helpers.php";
         $request = ServerRequestFactory::fromGlobals(
             $server = [
                 'REQUEST_METHOD' => 'GET',

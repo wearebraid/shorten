@@ -50,7 +50,7 @@ class Redirect extends Model
      *
      * @return void
      */
-    public function createUnique($url)
+    public static function createUnique($url)
     {
         do {
             $hash = bin2hex(openssl_random_pseudo_bytes(4));
