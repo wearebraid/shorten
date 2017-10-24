@@ -1,4 +1,10 @@
 {
+    "name": "braid/shorten",
+    "type": "project",
+    "description": "A small PSR-7 and PSR-15 compliant headless url shortener.",
+    "keywords": ["framework"],
+    "homepage": "http://github.com/wearebraid/shorten",
+    "license": "MIT",
     "require": {
         "zendframework/zend-diactoros": "^1.6",
         "mindplay/middleman": "3.0.0.x-dev",
