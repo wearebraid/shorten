@@ -13,4 +13,4 @@ build:
           format: 'php-clover'
 filter:
   excluded_paths:
-    - "tests/"
+    - "db"

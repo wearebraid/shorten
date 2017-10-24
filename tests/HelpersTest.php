@@ -36,7 +36,7 @@ class HelpersTest extends TestCase
     public function testConfig(): void
     {
         $hash = '9575d687c61ce66fc190cd2bed464cef';
-        $value = config('/tests/samples/config.php');
+        $value = config('tests/samples/config.php');
         $this->assertEquals($hash, $value['api_secret']);
     }
 }
