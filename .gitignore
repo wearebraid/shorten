@@ -2,3 +2,5 @@
 vendor
 config.php
 phinx.yml
+/build/logs
+clover.xml
